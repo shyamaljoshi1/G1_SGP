@@ -2,12 +2,15 @@
 This is a client based portfolio website
 
 ## Devlopers Name
--🙋‍♂️ Shyamal Joshi 
+-🙋‍♂️ Shyamal Joshi
+<br>
 -🙋‍♂️ Padmanabh Khunt
+<br>
 -🙋‍♂️ Ish Thummer
+<br>
 -🙋 Ritu Godhasara
 
-<br>
+
 <br>
 
 ## **🚀 Languages and Tools:**
