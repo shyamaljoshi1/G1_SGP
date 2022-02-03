@@ -16,6 +16,7 @@ const Navmenu = styled.div``;
 
 
 const Navbar = () => {
+<<<<<<< HEAD:src/components/Navbar.jsx
     return (
         <Nav>
             <Logo>LOGO</Logo>
@@ -24,6 +25,16 @@ const Navbar = () => {
             <h1>Navbar</h1>
         </Nav>
     )
+=======
+return (
+    <Nav>
+        <Logo>LOGO</Logo>
+        <Menubars/>
+        <Navmenu/>
+        <h1>Navbar1</h1>    
+    </Nav>
+)
+>>>>>>> e9f065a9591933e526faaa8670bd0956c69421a0:src/components/Navbar.js
 };
 
 export default Navbar;
