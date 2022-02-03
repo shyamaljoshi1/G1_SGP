@@ -1,9 +1,15 @@
-import Navbar from "./components/Navbar";
+import React from "react";
+import { Route } from 'react-router-dom';
+import { Navbar } from "./components";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <div>
+        <Route exact path="/" component={Navbar}>
+          <Navbar />
+        </Route>
+      </div>
     </>
   );
 }
