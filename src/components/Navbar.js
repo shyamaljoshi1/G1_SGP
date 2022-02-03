@@ -21,7 +21,7 @@ return (
         <Logo>LOGO</Logo>
         <Menubars/>
         <Navmenu/>
-        <h1>Navbar</h1>
+        <h1>Navbar1</h1>    
     </Nav>
 )
 };
