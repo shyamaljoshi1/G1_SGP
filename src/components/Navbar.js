@@ -8,6 +8,7 @@ import Bars from "../images/bars.svg"
 const Nav = styled.nav`
   height: 60px;
   /* background: red; */
+  background: #00000038;
   display:flex;
   justify-content:space-between;
   padding:1rem 2rem;
