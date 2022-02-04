@@ -70,7 +70,7 @@ const HeroContent = styled.div`
   max-widhth:1600px;
   widhth:calc(100%-100px);
   color:#fff;
-  background: #000000b8;
+  /*background: #000000b8;*/
   padding: 20px;
   /* border-radius:20px; */
   overflow: hidden;
