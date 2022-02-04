@@ -63,17 +63,20 @@ const HeroImage = styled.img`
   object-fit: cover;
 `;
 const HeroContent = styled.div`
-  position: relative;
+  position: absolute;
   z-index:10;
   display: flex;
   flex-direction:column;
   max-widhth:1600px;
   widhth:calc(100%-100px);
   color:#fff;
-  background: #00000094;
+  background: #000000b8;
   padding: 20px;
   /* border-radius:20px; */
   overflow: hidden;
+  bottom:8rem;
+  left:3rem;
+
 
   h1{
     font-size:clamp(1rem,8vh,2rem);
