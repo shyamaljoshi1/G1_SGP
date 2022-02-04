@@ -6,8 +6,6 @@ This is a client based portfolio website
 <br>
 -🙋‍♂️ Padmanabh Khunt
 <br>
--🙋‍♂️ Ish Thummer
-<br>
 -🙋 Ritu Godhasara
 
 
