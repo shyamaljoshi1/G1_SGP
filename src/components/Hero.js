@@ -72,7 +72,7 @@ const HeroContent = styled.div`
   color:#fff;
   background: #00000094;
   padding: 20px;
-  border-radius:20px;
+  /* border-radius:20px; */
   overflow: hidden;
 
   h1{
