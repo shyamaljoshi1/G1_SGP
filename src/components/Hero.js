@@ -40,7 +40,7 @@ const HeroSlider = styled.div`
     content: "";
     position: absolute;
     z-index: 2;
-    widhth: 100%;
+    width: 100%;
     height: 100vh;
     bottom: 0vh;
     left: 0;
@@ -67,8 +67,8 @@ const HeroContent = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-widhth: 1600px;
-  widhth: calc(100%-100px);
+  max-width: 1600px;
+  width: calc(100%-100px);
   color: #fff;
   /*background: #000000b8;*/
   /*background:#00000038;*/
