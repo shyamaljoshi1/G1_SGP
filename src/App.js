@@ -37,6 +37,7 @@ function App() {
             <Hero slides={SliderData}/>
             <InfoSection {...InfoData}/>
             <InfoSection {...InfoDataTwo}/>
+            <InfoSection {...InfoData}/>
           </Route>
         </Switch>
     </Router>
