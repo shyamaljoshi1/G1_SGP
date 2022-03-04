@@ -1,5 +1,5 @@
 import imageOne from "../images/image-4.jpg";
-import imageTwo from "../images/Image-3.jpg";
+// import imageTwo from "../images/Image-3.jpg";
 
 export const InfoData = {
     heading: "Explore our beautiful homes",

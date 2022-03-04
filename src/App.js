@@ -7,6 +7,12 @@ import GlobalStyle from "./globalStyle";
 import InfoSection from "./components/InfoSection";
 import { InfoData } from "./data/InfoData";
 import {InfoDataTwo} from "./data/InfoData";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import AboutUs from "./components/aboutus";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +22,24 @@ function App() {
   };
   return (
     <>
+    <Router>
       <GlobalStyle/>
       <Navbar toggle={toggle}/>
       <Dropdown isOpen={isOpen} toggle={toggle}/>
-      <Hero slides={SliderData}/>
-      <InfoSection {...InfoData}/>
-      <InfoSection {...InfoDataTwo}/>
+      <Switch>
+          <Route path="/about">
+            <AboutUs />
+          </Route>
+          <Route path="/users">
+            {/* <Users /> */}
+          </Route>
+          <Route path="/">
+            <Hero slides={SliderData}/>
+            <InfoSection {...InfoData}/>
+            <InfoSection {...InfoDataTwo}/>
+          </Route>
+        </Switch>
+    </Router>
     </>
   );
 }
