@@ -9,6 +9,7 @@ const Nav = styled.nav`
   height: 60px;
   /* background: red; */
   /* background: #17ada8; */
+  background:#0000003b;
   display:flex;
   justify-content:space-between;
   padding:1rem 2rem;
@@ -73,10 +74,10 @@ const NavButton=styled.div`
   }
 `;
 
-const Navbar = ({toggle,color}) => {
+const Navbar = ({toggle}) => {
   
   return (
-    <Nav>
+    <Nav >
       <Logo>LOGO</Logo>
       <Menubars onClick={toggle} />
       <Navmenu>

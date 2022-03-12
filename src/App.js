@@ -21,12 +21,12 @@ function App() {
     setIsOpen(!isOpen);
   };
   
+
   return (
     <>
     <Router>
       <GlobalStyle/>
-      +
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle}  />
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Switch>
           <Route path="/about">
