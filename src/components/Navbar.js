@@ -8,7 +8,7 @@ import Bars from "../images/bars.svg"
 const Nav = styled.nav`
   height: 60px;
   /* background: red; */
-  background: #00000038;
+  /* background: #17ada8; */
   display:flex;
   justify-content:space-between;
   padding:1rem 2rem;
@@ -73,7 +73,8 @@ const NavButton=styled.div`
   }
 `;
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle,color}) => {
+  
   return (
     <Nav>
       <Logo>LOGO</Logo>
