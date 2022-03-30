@@ -13,6 +13,7 @@ import {
   Route,
 } from "react-router-dom";
 import AboutUs from "./components/aboutus";
+import Projects from "./components/Projects";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/users">
             {/* <Users /> */}
+          </Route>
+          <Route path="/projects">
+            <Projects />
           </Route>
           <Route path="/">
             <Hero slides={SliderData}/>
