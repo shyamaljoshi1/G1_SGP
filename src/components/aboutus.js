@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 import imaggg from "../images/Image-5.jpg";
 
-const HeroPage = styled.div`
-  position: absolute;
-  // overflow: hidden;
-`;
+// const HeroPage = styled.div`
+//   position: absolute;
+// overflow: hidden;
+// `;
 
 // const HeroImage = styled.img`
 //   position: relative;
@@ -43,7 +43,7 @@ const HeroPage = styled.div`
 //   text-shadow: 0px 0px 30px #fff;
 // `;
 const HeroImage = styled.img`
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -63,7 +63,7 @@ const HeroImage = styled.img`
 `;
 
 const HeroAbout = styled.div`
-  position: relative;
+  position: absolute;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -72,15 +72,45 @@ const HeroAbout = styled.div`
   color: #fff;
   padding: 20px;
   overflow: hidden;
-  bottom: 11rem;
-  right: -35rem;
+  bottom: 13rem;
+  right: 3rem;
   letter-spacing: 15px;
   text-shadow: 0px 0px 30px #fff;
+  @media screen and (max-width: 984px){
+    bottom:11rem;
+    left: 13rem;
+    }
   @media screen and (max-width: 768px){
     bottom:10rem;
-    right: 2rem;
+    left: 13rem;
+    }
+    @media screen and (max-width: 655px){
+    bottom:9rem;
+    left: 8rem;
+    }
+    @media screen and (max-width: 579px){
+    bottom:9rem;
+    left: 4rem;
+    }
+    @media screen and (max-width: 513px){
+    bottom:9rem;
+    left: 2rem;
+    }
+    @media screen and (max-width: 479px){
+    bottom:9rem;
+    left: 1rem;
+    }
+    @media screen and (max-width: 462px){
+    bottom:9rem;
+    left: 1rem;
+    letter-spacing: 10px;
+    font-size:0.8rem;
+    }
+    @media screen and (max-width: 415px){
+    bottom:9rem;
     }
 `;
+
 const HeroData = styled.div`
   width: fit-content;
   height: fit-content; 
@@ -94,32 +124,66 @@ const HeroData = styled.div`
   position: absolute;  
 `;
 
-// const HeroContent = styled.div`
-//   // position: relative;
-//   // top: 50%;
-
-// `;
+const HeroContent = styled.div`
+   position: relative;
+   top: 50%;
+`;
+const HeroHistory = styled.div`
+  position: relative;
+  z-index: 777;
+  display: flex;
+  top:-1.7rem;
+  flex-direction: column;
+  /* top: 100px; */
+  padding-left:23px;
+  /* padding-top: 12px; */
+  padding-bottom: 12px;
+  padding-right:23px;
+  /* justify-content: flex; */
+  /* justify-self: center; */
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+`;
+const HeroDos = styled.div`
+  position: relative;
+`;
 
 const AboutUs = ({ about }) => {
   return (
-    <HeroPage>
+    <>
       <HeroImage src={imaggg} />
       <HeroAbout>
-        <h1>ABOUT RESOULT CONSULTANTS</h1>
+        <h1>ABOUT RESOULTE CONSULTANTS</h1>
       </HeroAbout>
 
-      {/* <HeroData>
+      <HeroData>
         {about.map((data) => {
           return (
             <HeroContent>
-              <h1>{data.title}</h1>
-              <p>{data.desp}</p>
+              <HeroHistory>
+                <h1>{data.his}</h1>
+                <h2>{data.gen}</h2>
+                <h2>{data.gen2}</h2>
+              </HeroHistory>
+              <HeroDos>
+                <h3>{data.do1}</h3>
+                <h3>{data.do2}</h3>
+                <h3>{data.do3}</h3>
+                <h3>{data.do4}</h3>
+                <h3>{data.do5}</h3>
+                <h3>{data.do6}</h3>
+                <h3>{data.do7}</h3>
+              </HeroDos>
+              {/* <h1>{data.title}</h1> */}
+              {/* <p>{data.desp}</p> */}
             </HeroContent>
           );
         })
         }
-      </HeroData> */}
-    </HeroPage>
+      </HeroData>
+    </>
   )
 }
 
