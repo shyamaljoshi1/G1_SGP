@@ -132,9 +132,9 @@ const HeroHistory = styled.div`
   position: relative;
   z-index: 777;
   display: flex;
-  top:-1.7rem;
+  /* top:-1.7rem; */
   flex-direction: column;
-  /* top: 100px; */
+  top: -10px;
   padding-left:23px;
   /* padding-top: 12px; */
   padding-bottom: 12px;
