@@ -6,7 +6,7 @@ export const AboutData = [
 
     },
     {
-        do1: '1 .Structural design of Residential, Commercial, Industrial, and infrastructure projects ',
+        do1: '1. Structural design of Residential, Commercial, Industrial, and infrastructure projects ',
         do2: '2. Value Engineering and  Proof checking of Bills and designs',
         do3: '3. Project management Consultancy for interior and civil construction work       ',
         do4: '4. Building Material Quantity estimation and Rate Analysis',

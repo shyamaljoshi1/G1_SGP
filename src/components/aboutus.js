@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
-import imaggg from "../images/Image-5.jpg";
+import imaggg from "../images/Image-7.jpg";
+import { Random } from 'react-animated-text';
+
+
 
 // const HeroPage = styled.div`
 //   position: absolute;
@@ -155,7 +158,8 @@ const AboutUs = ({ about }) => {
     <>
       <HeroImage src={imaggg} />
       <HeroAbout>
-        <h1>ABOUT RESOULTE CONSULTANTS</h1>
+        {/* <h1>ABOUT RESOULTE CONSULTANTS</h1> */}
+        <h1><Random text="ABOUT RESOULTE CONSULTANTS"   effect="verticalFadeOut" effectDirection="down" effectChange={3.0}/></h1>
       </HeroAbout>
 
       <HeroData>
@@ -181,8 +185,10 @@ const AboutUs = ({ about }) => {
             </HeroContent>
           );
         })
-        }
+      }
       </HeroData>
+
+      
     </>
   )
 }

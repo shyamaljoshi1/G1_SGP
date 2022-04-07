@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import AboutUs from "./components/aboutus";
 import Projects from "./components/Projects";
+import { Scrollbar } from "react-scrollbars-custom";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +29,14 @@ function App() {
     <>
       <Router>
         <GlobalStyle />
+        <Scrollbar style={{height: '100vh', width: '100vw'}}>
         <Navbar toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route path="/about">
+          
             <AboutUs about={AboutData} />
+            
           </Route>
           <Route path="/users">
             {/* <Users /> */}
@@ -47,6 +51,7 @@ function App() {
             <InfoSection {...InfoData} />
           </Route>
         </Switch>
+        </Scrollbar>
       </Router>
     </>
   );
