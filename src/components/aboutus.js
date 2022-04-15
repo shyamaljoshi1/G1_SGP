@@ -153,7 +153,10 @@ const HeroHistory = styled.div`
     padding-left:100px;
     padding-bottom: 50px;
     letter-spacing: 5px;
-    
+  }
+  h3{
+    padding-top:100px;
+    padding-left:100px;
   }
 `;
 const HeroDos = styled.div`
@@ -190,7 +193,8 @@ const AboutUs = ({ about }) => {
           return (
             <HeroContent>
               <HeroHistory>
-                <h1>{data.his}  </h1>
+                <h3>{data.icon}</h3>
+                <h1>{data.his}</h1>
                 <h2>{data.gen}</h2>
                 <h2>{data.gen2}</h2>
               </HeroHistory>
@@ -208,14 +212,14 @@ const AboutUs = ({ about }) => {
             </HeroContent>
           );
         })
-      }
+        }
       </HeroData>
 
-      
+
     </>
   )
 }
-  
+
 
 
 export default AboutUs;

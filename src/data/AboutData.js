@@ -5,9 +5,7 @@ export const AboutData = [
         his: "Our History",
         gen: 'Resolute Consultant is an Architecture and Engineering consultancy firm established in 2017.',
         gen2: 'The company is having specialization in the structural design of real estate projects such as residential, commercial, industrial projects with RCC frame structures or steel structures.The company has vast experience in infrastructure projects such as STP/ ETP plants, Water retaining structures and etc.',
-        icon : <FcSurvey size={50} />,
-        
-
+        icon: <FcSurvey size={70} />,
     },
     {
         do1: '1. Structural design of Residential, Commercial, Industrial, and infrastructure projects ',
