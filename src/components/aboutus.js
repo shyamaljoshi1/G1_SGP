@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
 import imaggg from "../images/Image-7.jpg";
-import { Random } from 'react-animated-text';
+import { GiGlobe } from "react-icons/gi"
+
+
 
 
 
@@ -139,35 +141,56 @@ const HeroHistory = styled.div`
   flex-direction: column;
   top: -10px;
   padding-left:23px;
-  /* padding-top: 12px; */
+  letter-spacing: 3px;
   padding-bottom: 12px;
   padding-right:23px;
+  padding-left:100px;
   /* justify-content: flex; */
   /* justify-self: center; */
   h1{
     font-size: 2rem;
     font-weight: bold;
+    padding-left:100px;
+    padding-bottom: 50px;
+    letter-spacing: 5px;
+    
   }
 `;
 const HeroDos = styled.div`
   position: relative;
 `;
+// const Title = styled(h1)`
+// color: ${themes.dark.text1};
+// background : linear-gradient(180deg, #ffd7ff 0%, #301cbe 100%);
+// background-clip: text;
+// -webkit-background-clip: text;
+// color: transparent;
+// span{
+
+// background : linear-gradient(180deg, #ffd7ff 0%, #301cbe 100%);
+// background-clip: text;
+// -webkit-background-clip: text;
+// color: transparent;
+// @media (max-width:450px){
+//   font-size:48px ;
+// }
+// }
+// `
 
 const AboutUs = ({ about }) => {
+
   return (
     <>
       <HeroImage src={imaggg} />
       <HeroAbout>
-        {/* <h1>ABOUT RESOULTE CONSULTANTS</h1> */}
-        <h1><Random text="ABOUT RESOULTE CONSULTANTS"   effect="verticalFadeOut" effectDirection="down" effectChange={3.0}/></h1>
+        <h1>ABOUT RESOULTE CONSULTANTS</h1>
       </HeroAbout>
-
       <HeroData>
         {about.map((data) => {
           return (
             <HeroContent>
               <HeroHistory>
-                <h1>{data.his}</h1>
+                <h1>{data.his}  </h1>
                 <h2>{data.gen}</h2>
                 <h2>{data.gen2}</h2>
               </HeroHistory>
@@ -192,6 +215,8 @@ const AboutUs = ({ about }) => {
     </>
   )
 }
+  
+
 
 export default AboutUs;
 
