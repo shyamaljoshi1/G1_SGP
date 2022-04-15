@@ -142,7 +142,10 @@ const HeroHistory = styled.div`
     padding-left:90px;
     padding-bottom: 30px;
     letter-spacing: 5px;
-    
+  }
+  h3{
+    padding-top:100px;
+    padding-left:100px;
   }
   a3{
     padding-top:12px;
@@ -219,10 +222,17 @@ const AboutUs = ({ about }) => {
           return (
             <HeroContent>
               <HeroHistory>
+<<<<<<< HEAD
                 <a3>{data.icon1}</a3>
                 <a1>{data.his}</a1>
                 <a2>{data.gen}</a2>
                 <a2>{data.gen2}</a2>
+=======
+                <h3>{data.icon}</h3>
+                <h1>{data.his}</h1>
+                <h2>{data.gen}</h2>
+                <h2>{data.gen2}</h2>
+>>>>>>> af8322b985b868d9f880234a7f37a14b5ff0aa13
               </HeroHistory>
               <HeroOwner>
                 <c4>{data.icon3}</c4>
@@ -251,14 +261,14 @@ const AboutUs = ({ about }) => {
             </HeroContent>
           );
         })
-      }
+        }
       </HeroData>
 
-      
+
     </>
   )
 }
-  
+
 
 
 export default AboutUs;
