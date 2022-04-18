@@ -16,6 +16,7 @@ import {
 import AboutUs from "./components/aboutus";
 import Projects from "./components/Projects";
 import { Scrollbar } from "react-scrollbars-custom";
+import Career from "./components/Careers";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +39,8 @@ function App() {
             <AboutUs about={AboutData} />
             
           </Route>
-          <Route path="/users">
-            {/* <Users /> */}
+          <Route path="/careers">
+            <Career/>
           </Route>
           <Route path="/projects">
             <Projects />

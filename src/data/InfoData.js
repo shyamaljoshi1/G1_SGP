@@ -2,11 +2,12 @@ import imageOne from "../images/image-4.jpg";
 // import imageTwo from "../images/Image-3.jpg";
 
 export const InfoData = {
-    heading: "Explore our beautiful homes",
+    heading: "Residential Sites",
     paragraphOne:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui.",
+    "Project: AW Architects, Ahmedabad",
     paragraphTwo:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip .",
+    "Post Tensioning Technology",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip .",
     buttonLabel: 
     "View homes",
     image: imageOne,
