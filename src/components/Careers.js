@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import imaggg from "../images/Image-8.jpg";
-import { Random } from 'react-animated-text';
-import RGF from 'react-google-forms'
+import { AiOutlineFileSearch } from "react-icons/ai";
 
 const HeroImage = styled.img`
   position: absolute;
@@ -73,6 +72,43 @@ const Careerh = styled.div`
     }
 `;
 const GForm = styled.div`
+  
+  position: relative;
+  top: 50%;
+`;
+const Formdata =styled.div`
+  position: relative;
+  z-index: 777;
+  display: flex;
+  flex-direction: column;
+  top: -10px;
+  padding-left:90px;
+  letter-spacing: 3px;
+  padding-right:23px;
+
+  a1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left:90px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+    
+  }
+  a2{
+    padding-left: 150px;
+    padding-right:150px;
+    font-size: 1.2rem;
+    letter-spacing: 3.5px;
+    padding-bottom: 0px;
+    opacity:70%;
+  }
+  a3{
+    padding-top:12px;
+    padding-left:150px;
+  }
+`;
+
+const CareerData = styled.div`
   width: fit-content;
   height: fit-content; 
   top: 100%;
@@ -82,6 +118,25 @@ const GForm = styled.div`
   overflow: hidden;
   flex-direction: column;
   position: absolute;  
+  a{
+    text-decoration: none;
+    border: solid black 1px ;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 30px;
+    transition:0.2s;
+
+  }
+  a:visited
+  {
+    color: black ;
+  }
+  a:hover
+  {
+    background-color:black;
+    color: white;
+    transform:translateY(-2px);
+  }
 `;
 
 
@@ -96,13 +151,20 @@ const Career = () => {
       <Careerh>
         <h1>CAREER</h1>
       </Careerh>
-      <GForm>
-        <h2>Internship</h2>
-      </GForm>
-
-    </>
+      <CareerData>
+        <GForm>
+          <Formdata>
+                  <a3>{<AiOutlineFileSearch size={50}/>}</a3>
+                  <a1>Internship / Jobs</a1>
+                  <a2>RESOULTE CONSULTANTS believes in the upliftment of society by training future and upcoming engineers who are going to take the nation forward. We are looking for young technical interns/people, professional in their demeanour, eager to learn, willing to contribute to the growth of themselves along with the firm and have sound morals and ethics.</a2>
+          </Formdata>
+        </GForm>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1R8uXwt1HhOVmcM5JXGInOBAtDjFctBJ7URGQNmdTyWCUlA/viewform?usp=pp_url" target="_blank">Apply Now</a>
+        
+      </CareerData>
+      
+  </>
   )
 }
 
 export default Career;
-
