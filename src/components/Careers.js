@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
-import imaggg from "../images/Image-7.jpg";
+import imaggg from "../images/Image-8.jpg";
 import { Random } from 'react-animated-text';
+import RGF from 'react-google-forms'
 
 const HeroImage = styled.img`
   position: absolute;
@@ -23,7 +24,7 @@ const HeroImage = styled.img`
     }
 `;
 
-const HeroAbout = styled.div`
+const Careerh = styled.div`
   position: absolute;
   z-index: 10;
   display: flex;
@@ -33,9 +34,9 @@ const HeroAbout = styled.div`
   color: #fff;
   padding: 20px;
   overflow: hidden;
-  bottom: 13rem;
-  right: 3rem;
-  letter-spacing: 15px;
+  bottom: 14rem;
+  right: 10rem;
+  letter-spacing: 20px;
   text-shadow: 0px 0px 30px #fff;
   @media screen and (max-width: 984px){
     bottom:11rem;
@@ -71,6 +72,17 @@ const HeroAbout = styled.div`
     bottom:9rem;
     }
 `;
+const GForm = styled.div`
+  width: fit-content;
+  height: fit-content; 
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;  
+`;
 
 
 
@@ -81,10 +93,13 @@ const Career = () => {
   return (
     <>
       <HeroImage src={imaggg} />
-      <HeroAbout>
-        {/* <h1>ABOUT RESOULTE CONSULTANTS</h1> */}
-        <h1><Random text="ABOUT RESOULTE CONSULTANTS"   effect="verticalFadeOut" effectDirection="down" effectChange={3.0}/></h1>
-      </HeroAbout>
+      <Careerh>
+        <h1>CAREER</h1>
+      </Careerh>
+      <GForm>
+        <h2>Internship</h2>
+      </GForm>
+
     </>
   )
 }
