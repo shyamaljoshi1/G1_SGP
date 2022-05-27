@@ -26,6 +26,9 @@ const HeroSlide = styled.div`
   width: 100%;
   height: 100%;
 `;
+
+
+
 const HeroSlider = styled.div`
   position: absolute;
   top: 0;
@@ -35,7 +38,7 @@ const HeroSlider = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -53,7 +56,9 @@ const HeroSlider = styled.div`
       rgba(0, 0, 0, 0.6) 100%
     );
   }
+
 `;
+
 const HeroImage = styled.img`
   position: absolute;
   top: 0;
@@ -61,25 +66,63 @@ const HeroImage = styled.img`
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  animation: moveInFromRight 2s ease-in-out;
+
+  @keyframes moveInFromRight {
+    0% {
+        opacity: 0.8;
+        /* transform: translateY(10rem); */
+    }
+    50%{
+      transform: scale(1.08);
+      opacity:1;
+    }
+    100% {
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+  }
 `;
 const HeroContent = styled.div`
   position: absolute;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  max-width: 160rem;
   width: calc(100%-100px);
+  min-width: 38rem;
   color: #fff;
   /* background: #000000b8; */
+  background: rgba( 47, 47, 45, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   /* background:#00000038; */
-  padding: 20px;
+  padding: 2rem;
   /* border-radius:20px; */
   overflow: hidden;
-  bottom: 8rem;
-  left: 3rem;
+  bottom: 10rem;
+  left: 6rem;
+  animation: moveInFromLeft 1.6s ease-in-out;
+
+  @keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
 
   h1 {
-    font-size: clamp(1rem, 8vh, 2rem);
+    font-size: clamp(3rem, 8vh, 2rem);
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
@@ -88,7 +131,9 @@ const HeroContent = styled.div`
   }
 
   p {
+    font-size: clamp(1.4rem, 4vh, 1.2rem);
     margin-bottom: 1.2rem;
+    font-weight: 200;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   }
 `;
@@ -98,24 +143,24 @@ const Arrow = styled(IoMdArrowRoundForward)`
 
 const SliderButtons = styled.div`
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 5rem;
+  right: 5rem;
   display: flex;
   z-index: 10;
 `;
 
 const arrowbutton = css`
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 5rem;
   cursor: pointer;
   background: #000d1a;
-  padding: 10px;
-  margin-right: 1rem;
+  padding: 1rem;
+  margin-right: 2rem;
   user-select: none;
   transition: 0.2s;
-
+  
   &:hover {
     background: #17ada8;
     transform: scale(1.05);
@@ -177,9 +222,9 @@ const Hero = ({ slides }) => {
           return (
             <HeroSlide key={index}>
             {index===current && (
-              <HeroSlider>
+              <HeroSlider >
                 <HeroImage src={slide.image} alt={slide.alt} />
-                <HeroContent>
+                <HeroContent >
                   <h1>{slide.title}</h1>
                   <p>{slide.location}</p>
                   <Button to={slide.path} primary="true">

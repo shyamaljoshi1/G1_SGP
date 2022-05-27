@@ -10,16 +10,16 @@ const HeroImage = styled.img`
   width: 100vw;
   height: 80vh;
   object-fit: cover;
-  border-bottom-left-radius: 45px;
-  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 4.5rem;
+  border-bottom-right-radius: 4.5rem;
   box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.5);
   @media screen and (max-width: 768px){
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
     }
   @media screen and (max-width: 460px){
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
     }
 `;
 
@@ -28,16 +28,16 @@ const HeroAbout = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
-  width: calc(100%-100px);
+  max-width: 160rem;
+  width: calc(100%-10rem);
   color: #fff;
-  padding: 20px;
+  padding: 2rem;
   overflow: hidden;
   bottom: 13rem;
   right: 3rem;
-  letter-spacing: 15px;
+  letter-spacing: 1.5rem;
   text-shadow: 0px 0px 30px #fff;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 76.8rem){
     bottom:10rem;
     right: 2rem;
     }
@@ -46,7 +46,7 @@ const HeroAbout = styled.div`
 
 const BtnContainer = styled.div`
   position: absolute;
-  bottom: 50px;
+  bottom: 5rem;
   right: 26rem;
   display: flex;
   z-index: 10;
@@ -57,7 +57,7 @@ const BtnContainer = styled.div`
   @media screen and (max-width: 768px){
     flex-direction:column;
     right:17rem;
-    bottom:-200px;
+    bottom:-20rem;
   }
   @media screen and (min-width: 770px ) and (max-width: 1024px){
     right:6rem;
@@ -65,17 +65,17 @@ const BtnContainer = styled.div`
   @media screen and (max-width: 530px){
     flex-direction:column;
     right:10rem;
-    bottom:-200px;
+    bottom:-20rem;
   }
   @media screen and (max-width: 426px){
     flex-direction:column;
     right:7rem;
-    bottom:-200px;
+    bottom:-20rem;
   }
   @media screen and (max-width: 376px){
     flex-direction:column;
     right:5rem;
-    bottom:-200px;
+    bottom:-20rem;
   }
   /* @media screen and (max-width: 768px){
     right: 10rem;

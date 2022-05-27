@@ -14,9 +14,11 @@ import {
   Route,
 } from "react-router-dom";
 import AboutUs from "./components/aboutus";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects"; 
 import { Scrollbar } from "react-scrollbars-custom";
 import Career from "./components/Careers";
+import AboutInfo from "./components/AboutInfo";
+import { AboutInfoData } from "./data/AboutInfoData";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,9 +49,11 @@ function App() {
           </Route>
           <Route path="/">
             <Hero slides={SliderData} />
+            <AboutInfo {...AboutInfoData} />
             <InfoSection {...InfoData} />
             <InfoSection {...InfoDataTwo} />
             <InfoSection {...InfoData} />
+            
           </Route>
         </Switch>
         </Scrollbar>

@@ -5,8 +5,9 @@ import { menuData } from "../data/MenuData";
 import { Button } from "./Button";
 import Bars from "../images/bars.svg"
 
+
 const Nav = styled.nav`
-  height: 60px;
+  height: 6rem;
   /* background: red; */
   /* background: #17ada8; */
   background:#0000003b;
@@ -21,11 +22,13 @@ const NavLinks=css`
   color:#fff;
   display: flex;
   align-items:center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor:pointer;
   text-decoration:none;
+  font-size: 1.5rem;
 `;
+
 const Logo = styled(Link)`
   ${NavLinks};
   color:#fff;
@@ -67,7 +70,7 @@ const NavMenuLinks=styled(Link)`
 const NavButton=styled.div`
   display: flex;
   align-items:center;
-  margin-right: 24px;
+  margin-right: 2.4rem;
 
   @media screen and (max-width:768px){
     display: none;

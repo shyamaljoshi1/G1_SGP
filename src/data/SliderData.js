@@ -1,11 +1,11 @@
 import ImageOne from "../images/Image-1.jpeg";
 import ImageTwo from "../images/Image-2.jpg";
-import ImageThree from "../images/Image-3.jpg";
+import ImageThree from "../images/image-10.jpg";
 
 export const SliderData = [
   {
-    title: "Shubha Laxmi AVENUE",
-    location: "Tragad , Ahmedabad",
+    title: "Varenyam",
+    location: "Himmatnagar, Gujarat",
     path: "/home",
     lable: "View Project",
     image: ImageThree,
