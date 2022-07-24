@@ -50,9 +50,9 @@ function App() {
           <Route path="/">
             <Hero slides={SliderData} />
             <AboutInfo {...AboutInfoData} />
-            <InfoSection {...InfoData} />
-            <InfoSection {...InfoDataTwo} />
-            <InfoSection {...InfoData} />
+            {/* <InfoSection {...InfoData} /> */}
+            {/* <InfoSection {...InfoDataTwo} /> */}
+            {/* <InfoSection {...InfoData} /> */}
             
           </Route>
         </Switch>

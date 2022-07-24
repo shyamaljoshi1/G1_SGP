@@ -14,8 +14,13 @@ const GlobalStyle = createGlobalStyle`
     html,body{
         overflow-x:hidden;
         font-size: 62.5%;
+        @media screen and (max-width: 768px){
+            font-size: 8px;
+        }
+
     }
     
+
 `;
 
 export default GlobalStyle;

@@ -4,9 +4,9 @@ import { Button } from "./Button";
 
 const Section = styled.section`
     padding:25rem 0;
-    margin-top: -20vh;
+    margin-top: -20rem;
     background-color: #eee;
-    height: 120vh;
+    height: 100rem;
 `; 
 
 const SectionHeading = styled.div`
@@ -38,8 +38,9 @@ const SectionHeading = styled.div`
 `;
 
 const SectionRow = styled.section`
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 114rem;
+    min-width: 76.9rem;
+    margin: 12rem auto;
     &::after{
         content: "";
         display: table;
@@ -54,6 +55,7 @@ const Container1 = styled.div`
     /* &:not(:last-child){
         margin-right: 60px;
     } */
+    
     width: calc((100% - 60px)/2);
     h1{
         margin-bottom: 1rem;
@@ -71,6 +73,21 @@ const Container1 = styled.div`
             margin-bottom: 3rem;
         }
     }    
+    animation: moveInFromLeft 1.6s ease-in-out;
+
+  @keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
 `;
 const Container2 = styled.div`
     float: left;
@@ -81,31 +98,31 @@ const Container2 = styled.div`
 const Composition=styled.div`
     position: relative;
     img{
-        width:55%;
+        width:52%;
         box-shadow: 0 1.5rem 4rem rgba($color-black,0.4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
         transition: all .2s;
         &:nth-child(1){
-            top: -2rem;
-            left: 7rem ;
+            top: 2.83rem;
+            left: 6rem ;
             &:hover{
                 transform: scale(1.2);
                 z-index: 20;
             }
         }
         &:nth-child(2){
-            top: -2rem;
-            right: -13rem;
+            top: 2.83rem;
+            left:35rem;
             &:hover{
                 transform: scale(1.2);
                 z-index: 20;
             }
         }
         &:nth-child(3){
-            top: 15rem;
-            left: 40% ;
+            top: 19.7rem;
+            left: 20.3rem;
             &:hover{
                 transform: scale(1.2);
                 z-index: 20;
@@ -113,58 +130,6 @@ const Composition=styled.div`
         }
     }
 `;
-
-
-// const ColumnLeft = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: left; 
-//     align-items: flex-start;
-//     flex-wrap: wrap;
-//     box-sizing: border-box;
-//     line-height: 1.4;
-//     padding: 1rem 2rem;
-//     width: 100%;
-//     order: ${({reverse}) => (reverse? '2' : '1')};
-
-//     h1{
-//         margin-bottom: 2rem;
-//         font-size: clamp(1.5rem,6vw,2rwm);
-//     }
-//     p{
-//         margin-bottom: 2rem;
-//     }
-//     @media screen and (max-width: 768px) {
-//         padding-top:1rem ;
-//         height: 570px; 
-//     }
-// `;
-
-// const ColumnRight = styled.div`
-//     padding: 1rem 2rem;
-//     order: ${({reverse}) => (reverse? '1' : '2')};
-//     display: flex;
-//     justify-content: ${({reverse}) => (reverse? 'left' : 'right')};
-    
-//     align-items: right;
-//     //width: 1000px;
-
-//     @media screen and (max-width: 768px){
-//         order: ${({reverse}) => (reverse? '2' : '1')};
-//         //width: 800px;
-//     }
-
-//     img{
-//         width: 65%;
-//         height: 100%;
-//         display: flex;
-//         object-fit: cover;
-//         @media screen and (max-width: 768px){
-//             width: 100%;
-//             height: 100%;
-//         }
-//     }
-// `;
 
 
 const AboutInfo = ({heading,heading2,paragraphOne,paragraphTwo,buttonLabel,image1,image2,image3}) => {
